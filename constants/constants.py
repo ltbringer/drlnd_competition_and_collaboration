@@ -1,0 +1,15 @@
+BUFFER_SIZE     = int(1e5)  # replay buffer size
+BATCH_SIZE      = 128       # mini-batch size
+GAMMA           = 0.99      # discount factor
+TAU             = 1e-3      # for soft update of target parameters
+ACTOR_LR        = 1e-4      # learning rate of the actor
+CRITIC_LR       = 1e-4      # learning rate of the critic
+WEIGHT_DECAY    = 0
+FC1_UNITS       = 256
+FC2_UNITS       = 256
+SEED            = 10
+EPISODES        = 10
+TIME_STEPS      = 100
+TRAIN           = 'train'
+TEST            = 'test'
+QUALIFY_WINDOW  = 300

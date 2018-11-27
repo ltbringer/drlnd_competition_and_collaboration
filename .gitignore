@@ -1,0 +1,5 @@
+.pyc
+.idea/*
+Reacher.app
+.ipynb_checkpoints
+unity-environment.log
