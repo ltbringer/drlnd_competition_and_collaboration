@@ -45,7 +45,6 @@ def test_agent(
             .reset_to_initial_state(train_mode=False) \
             .get_state_snapshot()
 
-        print(states[0])
 
         scores = []
         for t in range(max_t):
