@@ -73,7 +73,7 @@ Critic(
 
 # Reward plots
 Environment solved in 1164 episodes!	Average Score: 0.50
-![scores](https://github.com/AmreshVenugopal/drlnd_continous_control/blob/master/scores_over_100.png)
+![scores](https://github.com/AmreshVenugopal/drlnd_competition_and_collaboration/blob/master/scores_tennis_action_seeded.png)
 
 
 # Ideas for Future Work

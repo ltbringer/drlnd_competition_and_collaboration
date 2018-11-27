@@ -138,4 +138,4 @@ hard to maintain for the network.
 Gradient clipping also helped to keep the gradients from exploding as a
 ReLU activation function was chosen.
 
-![scores](https://github.com/AmreshVenugopal/drlnd_continous_control/blob/master/scores_over_100.png)
+![scores](https://github.com/AmreshVenugopal/drlnd_competition_and_collaboration/blob/master/scores_tennis_action_seeded.png)
