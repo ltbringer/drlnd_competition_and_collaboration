@@ -77,14 +77,18 @@ Environment solved in 1164 episodes!	Average Score: 0.50
 
 
 # Ideas for Future Work
-DDPG Algorithms need a lot of episodes to solve environments
-which means slow convergence of neural networks is a huge bottleneck.
-The model trained in this example took ~6 hours to hit 30+ points 
-over 300 episodes.
+Due to the multi agent nature of the problem agents get more samples to learn from
+but it also causes the agents to lose stability with increasing number of episodes.
 
-Previous attempts without batch-normalization and dropout had even poor 
-convergence results with over 500 of episodes fed, a reward of 1 was 
-hard to maintain for the network.
+Things that can be tried to keep the performance stable:
 
-Gradient clipping also helped to keep the gradients from exploding as a
-ReLU activation function was chosen.
+1. Increase the depth of the network.
+2. Apply dropout to enforce regularization.
+3. Normalize the weights using batch-normalization to prevent the gradients from exploding.
+4. Using ReLU prevents the gradients from vanishing.
+
+These are the problems that can cause a network to fail at learning.
+It was also a worry that since in the initial stages there are a lot of failing scenarios
+and towards episode 1100s a lof of successful scenarios, would the replay buffer do a good job
+at providing a good distribution? as providing only one kind of samples would train the agent 
+to assume certain actions are better and it would fail.

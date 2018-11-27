@@ -126,16 +126,7 @@ Critic(
 ```
 
 ### Experience
-DDPG Algorithms need a lot of episodes to solve environments
-which means slow convergence of neural networks is a huge bottleneck.
-The model trained in this example took ~3 hours to hit 30+ points 
-over 300 episodes. 
-
-Previous attempts without batch-normalization had even poor 
-convergence results with over 100s of episodes fed, a reward of 1 was 
-hard to maintain for the network.
-
-Gradient clipping also helped to keep the gradients from exploding as a
-ReLU activation function was chosen.
+Due to the multi agent nature of the problem agents get more samples to learn from
+but it also causes the agents to lose stability with increasing number of episodes.
 
 ![scores](https://github.com/AmreshVenugopal/drlnd_competition_and_collaboration/blob/master/scores_tennis_action_seeded.png)
